@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-```markdown
-=======
-
->>>>>>> a387584a7407d336e9d796cf724f3b2c12a451e9
 # ⚡ NAVI TALIB // MERN STACK PORTFOLIO HUD
 
 <div align="center">
