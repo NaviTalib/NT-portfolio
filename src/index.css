@@ -1,0 +1,68 @@
+@import "tailwindcss";
+
+html {
+  scroll-behavior: smooth;
+}
+
+@layer utilities {
+  /* Scanning Radar Line Animation */
+  @keyframes scanline {
+    0% { transform: translateY(-100%); }
+    100% { transform: translateY(1200%); }
+  }
+
+  .animate-scanline {
+    animation: scanline 7s linear infinite;
+  }
+
+  /* Infinite Ticker Animation */
+  @keyframes scrollText {
+    from { transform: translateX(0%); }
+    to { transform: translateX(-50%); }
+  }
+
+  .animate-scrollText {
+    display: flex;
+    white-space: nowrap;
+    animation: scrollText 20s linear infinite;
+  }
+
+  /* Cyber Grid Canvas */
+  .bg-cyber-grid {
+    background-image: 
+      linear-gradient(to right, rgba(6, 182, 212, 0.05) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(6, 182, 212, 0.05) 1px, transparent 1px);
+    background-size: 32px 32px;
+  }
+
+  /* Text Glow Effects */
+  .text-glow-cyan {
+    text-shadow: 0 0 10px rgba(6, 182, 212, 0.7), 0 0 20px rgba(6, 182, 212, 0.3);
+  }
+
+  .text-glow-emerald {
+    text-shadow: 0 0 10px rgba(16, 185, 129, 0.7);
+  }
+
+  /* Futuristic Glass Card */
+  .glass-hud {
+    background: rgba(15, 23, 42, 0.75);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+  }
+}
+
+/* Custom Cyber Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #020617;
+}
+::-webkit-scrollbar-thumb {
+  background: #0891b2;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #06b6d4;
+}
